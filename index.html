@@ -73,7 +73,6 @@
             border-bottom-right-radius: 10px;
             color: #000000;
             font-weight: 400;
-            overflow: scroll;
 
         }
 
@@ -146,7 +145,16 @@
 
 
 
+        ChangeCode.addEventListener("click",()=>{
+            navigator.clipboard.writeText(ChangeCode.textContent);
 
+            alert("Code copied to clipboard");
+        })
+        
+      
+        
+            
+        
 
 
     </script>
